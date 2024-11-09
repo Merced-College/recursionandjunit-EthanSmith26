@@ -87,5 +87,19 @@ public class Main{
         // Else continue searching
         return strCount(str.substring(1), sub);
     }
+
+    public static  String stringClean(String str){
+        // Base Case
+        if(str.length() <= 1) {
+            return str; 
+        }
+
+        // If first two char's are the same, skip second one
+        if(str.charAt(0) == str.charAt(1)){
+            return stringClean(str.substring(1));
+        }
+        // Else keep the first character and continue with rest of String
+        return str.charAt(0) + stringClean(str.substring(1)); 
+    }
     
 }

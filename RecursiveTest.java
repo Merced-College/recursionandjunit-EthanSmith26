@@ -109,32 +109,32 @@ public class RecursiveTest {
     public void test20() {
         assertEquals(Main.strCount("pigcatdonkeymousepig", "pig"), 2);
     }
-    /* 
+    
     // stringClean method tests
     @Test
     public void test21() {
-        assertEquals(Main.stringClean(8818), 4);
+        assertEquals(Main.stringClean("yyzzza"), "yza");
     }
 
     @Test
     public void test22() {
-        assertEquals(Main.stringClean(8818), 4);
+        assertEquals(Main.stringClean("abbbcdd"), "abcd");
     }
 
     @Test
     public void test23() {
-        assertEquals(Main.stringClean(8818), 4);
+        assertEquals(Main.stringClean("Hello"), "Helo");
     }
 
     @Test
     public void test24() {
-        assertEquals(Main.stringClean(8818), 4);
+        assertEquals(Main.stringClean("yaammtisolpse"), "yamtisolpse");
     }
 
     @Test
     public void test25() {
-        assertEquals(Main.stringClean(8818), 4);
+        assertEquals(Main.stringClean("jjjjjjjjjjjja"), "ja");
     }
-    */
+    
 
 }
