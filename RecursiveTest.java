@@ -56,33 +56,33 @@ public class RecursiveTest {
         assertEquals(Main.countHi("xhiihiihix"), 3);
     }
 
-    /*
+    
     // countHi 2 method tests 
     @Test
     public void test11() {
-        assertEquals(Main.countHi2(8818), 4);
+        assertEquals(Main.countHi2("ahixhi"), 1);
     }
-
+    
     @Test
     public void test12() {
-        assertEquals(Main.countHi2(8818), 4);
+        assertEquals(Main.countHi2("ahibhi"), 2);
     }
 
     @Test
     public void test13() {
-        assertEquals(Main.countHi2(8818), 4);
+        assertEquals(Main.countHi2("xhixhi"), 0);
     }
 
     @Test
     public void test14() {
-        assertEquals(Main.countHi2(8818), 4);
+        assertEquals(Main.countHi2("hixxhixhihi"), 2);
     }
 
     @Test
     public void test15() {
-        assertEquals(Main.countHi2(8818), 4);
+        assertEquals(Main.countHi2("ihxhihixih"), 1);
     }
-
+    /*
     // strCount method tests
     
     @Test

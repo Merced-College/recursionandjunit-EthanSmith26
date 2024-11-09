@@ -52,5 +52,25 @@ public class Main{
             return countHi(str.substring(1));
         }
     }
+
+    public static int countHi2(String str){
+        // Base Case
+        if (str.length() < 2) {
+            return 0;
+        }
+    
+        // If the string starts with "hi" and it's not preceded by 'x'
+        if (str.startsWith("hi") && (str.length() < 3 || str.charAt(0) != 'x')) {
+            return 1 + countHi2(str.substring(2)); // Skip over the "hi" after counting
+        } 
+    
+        // If the string starts with 'x', skip the 'x' and continue
+        if (str.startsWith("x") && str.length() >= 3 && str.charAt(1) == 'h' && str.charAt(2) == 'i') {
+            return countHi2(str.substring(3)); // Skip over "xhi"
+        }
+    
+        // Continue to the next character if "hi" is not found
+        return countHi2(str.substring(1));
+    }    
     
 }
