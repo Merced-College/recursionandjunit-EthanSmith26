@@ -35,5 +35,22 @@ public class Main{
         return count8(n / 10); 
 
     }
+
+    public static int countHi(String str){
+        // Base Case
+        if(str.length() < 2){
+            return 0; 
+        }
+
+        // If str starts with "hi"
+        if(str.startsWith("hi")){
+            // Increment by 1 and call method skipping first 2 indicies
+            return 1 + countHi(str.substring(2)); 
+        } 
+        else{
+            // Move to next character
+            return countHi(str.substring(1));
+        }
+    }
     
 }
