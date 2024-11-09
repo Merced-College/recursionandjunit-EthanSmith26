@@ -82,36 +82,35 @@ public class RecursiveTest {
     public void test15() {
         assertEquals(Main.countHi2("ihxhihixih"), 1);
     }
-    /*
+    
     // strCount method tests
     
     @Test
     public void test16() {
-        assertEquals(Main.strCount(8818), 4);
+        assertEquals(Main.strCount("catcowcat", "cat"), 2);
     }
 
     @Test
     public void test17() {
-        assertEquals(Main.strCount(8818), 4);
+        assertEquals(Main.strCount("catcowcat", "cow"), 1);
     }
 
     @Test
     public void test18() {
-        assertEquals(Main.strCount(8818), 4);
+        assertEquals(Main.strCount("catcowcat", "dog"), 0);
     }
 
     @Test
     public void test19() {
-        assertEquals(Main.strCount(8818), 4);
+        assertEquals(Main.strCount("batbatbatdogbat", "bat"), 4);
     }
 
     @Test
     public void test20() {
-        assertEquals(Main.strCount(8818), 4);
+        assertEquals(Main.strCount("pigcatdonkeymousepig", "pig"), 2);
     }
-
+    /* 
     // stringClean method tests
-
     @Test
     public void test21() {
         assertEquals(Main.stringClean(8818), 4);
